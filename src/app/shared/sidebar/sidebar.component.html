@@ -1,0 +1,17 @@
+<!--SIDEBAR-->
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">Gifs App</h3>
+  <hr class="text-light">
+  <div class="list-group list-reset">
+    <a href="#" class="list-group-item list-group-item-action">
+      Dashboard
+    </a>
+    <hr>
+    <h5 class="text-light">Historial de busqueda</h5>
+    <hr class="text-light">
+    <a *ngFor="let palabrasBuscadas of historial " href="#" class="list-group-item list-group-item-action">
+      {{palabrasBuscadas}}
+    </a>
+  </div>
+</div>
+<!--Fin SIDEBAR-->
