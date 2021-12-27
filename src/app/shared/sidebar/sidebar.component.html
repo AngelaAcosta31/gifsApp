@@ -7,10 +7,10 @@
       Dashboard
     </a>
     <hr>
-    <h5 class="text-light">Historial de busqueda</h5>
+    <h5 class="text-light">Historial de búsqueda</h5>
     <hr class="text-light">
-    <a *ngFor="let palabrasBuscadas of historial " href="#" class="list-group-item list-group-item-action">
-      {{palabrasBuscadas}}
+    <a *ngFor="let palabrasBuscadas of historial " (click)="buscar(palabrasBuscadas)" href="#" class="list-group-item list-group-item-action">
+      {{palabrasBuscadas | titlecase}}
     </a>
   </div>
 </div>

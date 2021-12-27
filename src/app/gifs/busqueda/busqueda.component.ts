@@ -14,7 +14,9 @@ export class BusquedaComponent  {
   buscar() {
     const valor = this.txtBuscar.nativeElement.value;
 
-    <!--Verificamos que no hayan busquedas repetidas para que solo aparezca una vez en la lista-->
+    /**
+     * Verificamos solo muestre si introducimos una letra 
+     */
 
     if(valor.trim().length===0){
        return;
